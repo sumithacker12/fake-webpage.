@@ -3,6 +3,119 @@
     <title>Amazon Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #232f3e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .header .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-grid {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card .discount {
+            color: red;
+            font-weight: bold;
+        }
+        .product-card .festival {
+            color: #b12704;
+            font-size: 12px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product-card .mrp {
+            text-decoration: line-through;
+            color: #555;
+        }
+        .product-card .description {
+            font-size: 14px;
+            color: #555;
+        }
+        .category-grid {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .category-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-card .title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+  </style>
+
 </head>
 <body class="bg-gray-100">
     <header class="bg-gray-800 p-4 flex items-center justify-between">
@@ -36,10 +149,11 @@
             </div>
         </div>
     </header>
-
+ <h1 class="text-xl font-bold mb-4">
+    ____________BIG DIWALI OFFERS
+   </h1>
     <main class="p-4">
         <div class="grid grid-cols-5 gap-4">
-
             <!-- Lenovo Laptop -->
             <!-- Lenovo Laptop -->
 <div class="bg-white p-4 rounded-md shadow-md">
@@ -50,11 +164,10 @@
         <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">31% off</span>
         <span class="text-red-500 text-xs ml-2">Great Indian Festival</span>
     </div>
-    <div class="mt-2 text-lg font-bold">₹66,190.00</div>
+    <div class="mt-2 text-lg font-bold">₹29,990.00</div>
     <div class="text-sm text-gray-500">M.R.P: <span class="line-through">₹95,090.00</span></div>
     <div class="text-sm">Lenovo [Smartchoice LOQ 12th Gen I...</div>
 </div>
-
 
             <!-- Dell Laptop -->
             <div class="bg-white p-4 rounded-md shadow-md">
@@ -65,7 +178,7 @@
                     <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">29% off</span>
                     <span class="text-red-500 text-xs ml-2">Great Indian Festival</span>
                 </div>
-                <div class="mt-2 text-lg font-bold">₹47,990.00</div>
+                <div class="mt-2 text-lg font-bold">₹27,990.00</div>
                 <div class="text-sm text-gray-500">M.R.P: <span class="line-through">₹67,457.00</span></div>
                 <div class="text-sm">Dell 15 Thin &amp; Light Laptop, Intel Cor...</div>
             </div>
@@ -79,7 +192,7 @@
                     <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">37% off</span>
                     <span class="text-red-500 text-xs ml-2">Great Indian Festival</span>
                 </div>
-                <div class="mt-2 text-lg font-bold">₹41,990.00</div>
+                <div class="mt-2 text-lg font-bold">₹21,990.00</div>
                 <div class="text-sm text-gray-500">M.R.P: <span class="line-through">₹56,990.00</span></div>
                 <div class="text-sm">Acer Aspire Lite 12th Gen Intel Core i...</div>
             </div>
@@ -93,7 +206,7 @@
                     <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">34% off</span>
                     <span class="text-red-500 text-xs ml-2">Great Indian Festival</span>
                 </div>
-                <div class="mt-2 text-lg font-bold">₹49,990.00</div>
+                <div class="mt-2 text-lg font-bold">₹19,990.00</div>
                 <div class="text-sm text-gray-500">M.R.P: <span class="line-through">₹1,05,398.00</span></div>
                 <div class="text-sm">Dell {Smartchoice} G15-5530 Core i5-...</div>
             </div>
@@ -107,7 +220,7 @@
                     <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">30% off</span>
                     <span class="text-red-500 text-xs ml-2">Great Indian Festival</span>
                 </div>
-                <div class="mt-2 text-lg font-bold">₹59,990.00</div>
+                <div class="mt-2 text-lg font-bold">₹19,000.00</div>
                 <div class="text-sm text-gray-500">M.R.P: <span class="line-through">₹85,190.00</span></div>
                 <div class="text-sm">Lenovo IdeaPad Slim 3 13th Gen Inte...</div>
             </div>
@@ -159,7 +272,7 @@
       Great Indian Festival
      </div>
      <div class="text-xl font-bold mb-1">
-      ₹19,998.00
+      ₹12,998.00
      </div>
      <div class="text-gray-500 text-sm mb-1">
       M.R.P:
@@ -183,7 +296,7 @@
       Great Indian Festival
      </div>
      <div class="text-xl font-bold mb-1">
-      ₹56,990.00
+      ₹46,990.00
      </div>
      <div class="text-gray-500 text-sm mb-1">
       M.R.P:
@@ -207,7 +320,7 @@
       Great Indian Festival
      </div>
      <div class="text-xl font-bold mb-1">
-      ₹42,999.00
+      ₹29,999.00
      </div>
      <div class="text-gray-500 text-sm mb-1">
       M.R.P:
@@ -231,7 +344,7 @@
       Great Indian Festival
      </div>
      <div class="text-xl font-bold mb-1">
-      ₹11,999.00
+      ₹7,999.00
      </div>
      <div class="text-gray-500 text-sm mb-1">
       M.R.P:
@@ -255,7 +368,7 @@
       Great Indian Festival
      </div>
      <div class="text-xl font-bold mb-1">
-      ₹13,999.00
+      ₹9,999.00
      </div>
      <div class="text-gray-500 text-sm mb-1">
       M.R.P:
@@ -269,6 +382,15 @@
     </div>
    </div>
   </div>
+  <footer>
+    <p>_________________________________________________________________</p>
+    <p>_________________________________________________________________</p>
+    <p>_________________&copy; 2024 Your Website Name. All rights reserved.</p>
+    <p>_________________Made in the direction of Mr. Amit Sir and by the JMPS family for awareness purposes.</p>
+    <p>_________________________________________________________________</p>
+    <p>_________________________________________________________________</p>
+  </footer>
+
   </body>
 </body>
 </html>
