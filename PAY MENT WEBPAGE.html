@@ -1,18 +1,9 @@
 <html>
  <head>
-  <title>
-   Axis Bank Login
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <title>Axis Bank Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <script>
-   function openNewPage() {
-     window.open('https://www.example.com', '_blank');
-   }
-   function openCancelPage() {
-     window.open('https://www.cancelpage.com', '_blank');
-   }
    function togglePasswordVisibility() {
      const passwordField = document.getElementById('password');
      const eyeIcon = document.getElementById('eye-icon');
@@ -32,45 +23,32 @@
   <div class="w-full max-w-md">
    <!-- Header -->
    <div class="bg-[#8A154B] p-4 flex items-center justify-between">
-    <span class="text-white text-sm ml-auto">
-     NET BANKING PAYMENTS
-    </span>
+    <span class="text-white text-sm ml-auto">NET BANKING PAYMENTS</span>
    </div>
    <!-- Login Form -->
    <div class="bg-white p-8">
-    <h2 class="text-[#8A154B] text-center text-xl font-semibold mb-6">
-     PAYMENT
-    </h2>
+    <h2 class="text-[#8A154B] text-center text-xl font-semibold mb-6">PAYMENT</h2>
     <form>
      <div class="mb-4">
-      <label class="block text-[#008080] text-sm mb-2" for="customer-id">
-       Card Number or Bank Number
-      </label>
-      <input class="w-full p-3 border border-[#008080] rounded bg-[#E0F2F1]" id="customer-id" placeholder="Card Number or Bank Number" type="text"/>
-      <a class="text-[#8A154B] text-sm mt-2 inline-block" href="#">
-       Numbers Only
-      </a>
+      <label class="block text-[#008080] text-sm mb-2" for="customer-id">Card Number or Bank Number</label>
+      <input class="w-full p-3 border border-[#008080] rounded bg-[#E0F2F1]" id="customer-id" placeholder="Card Number or Bank Number" type="text" required/>
+      <a class="text-[#8A154B] text-sm mt-2 inline-block" href="#">Numbers Only</a>
      </div>
      <div class="mb-6">
-      <label class="block text-[#008080] text-sm mb-2" for="password">
-       Password
-      </label>
+      <label class="block text-[#008080] text-sm mb-2" for="password">Password</label>
       <div class="relative">
-       <input class="w-full p-3 border border-[#008080] rounded bg-[#E0F2F1]" id="password" placeholder="Password" type="password"/>
-       <i class="fas fa-eye absolute right-3 top-3 text-[#008080]" id="eye-icon" onclick="togglePasswordVisibility()">
-       </i>
+       <input class="w-full p-3 border border-[#008080] rounded bg-[#E0F2F1]" id="password" placeholder="Password" type="password" required/>
+       <i class="fas fa-eye absolute right-3 top-3 text-[#008080]" id="eye-icon" onclick="togglePasswordVisibility()"></i>
       </div>
-      <a class="text-[#8A154B] text-sm mt-2 inline-block" href="#">
-       Forgot Password
-      </a>
+      <a class="text-[#8A154B] text-sm mt-2 inline-block" href="#">Forgot Password</a>
      </div>
      <div class="mb-4">
-      <button class="w-full bg-[#8A154B] text-white p-3 rounded" type="button" onclick="openNewPage()">
-       Login
+      <button class="w-full bg-[#8A154B] text-white p-3 rounded" type="button" onclick="window.open('final page.html', '_blank')">
+       Pay
       </button>
      </div>
      <div>
-      <button class="w-full bg-[#F5F5F5] text-[#8A154B] p-3 rounded" type="button" onclick="openCancelPage()">
+      <button class="w-full bg-[#F5F5F5] text-[#8A154B] p-3 rounded" type="button" onclick="window.open('https://www.cancelpage.com', '_blank')">
        Cancel this transaction
       </button>
      </div>
@@ -79,13 +57,8 @@
    <!-- Footer -->
    <div class="text-center text-gray-500 text-xs mt-8">
     Copyright 2018 Axis Bank, India |
-    <a class="underline" href="#">
-     Disclaimer
-    </a>
-    |
-    <a class="underline" href="#">
-     Privacy Policy
-    </a>
+    <a class="underline" href="#">Disclaimer</a> |
+    <a class="underline" href="#">Privacy Policy</a>
    </div>
   </div>
  </body>
